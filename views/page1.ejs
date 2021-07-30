@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers way</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>FARMERS Way</h1>
+        </div>
+        <div class="search_box">
+            <form action="/search" method="POST">
+                <input class="input_box" type="text" name="box" placeholder="search" style="border: blue;
+            outline: none;
+            background: none;
+            float: left;
+            padding: 0;
+            color: black;
+            font-size: 16px;
+            width: 380px;
+            line-height: 31px;
+            ">
+                <button type="submit" style="color: black;
+            float: right;
+            text-decoration: none;
+            width: 57px;
+            height: 31px;
+            line-height: 34px;
+            text-align: center;
+            border-radius: 5px;
+            position: relative;
+            top: -5px;
+            right: -4px;
+            background-color: yellow;">
+                    <i class="fas fa-search"></i>
+                    </a>
+            </form>
+        </div>
+        <div class="city-option">
+
+            <div class="select-box">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id="Asansol" name="category" />
+                        <label for="Asansol">Asansol</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" href="" id="Amritsar" name="category" />
+                        <label for="Amritsar">Amritsar</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Ambala" name="category" />
+                        <label for="Ambala">Ambala</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Amravati" name="category" />
+                        <label for="Amravati">Amravati</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Bathinda" name="category" />
+                        <label for="Bathinda">Bathinda</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Burdwan" name="category" />
+                        <label for="Burdwan">Burdwan</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Darjeeling" name="category" />
+                        <label for="Darjeeling">Darjeeling</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Faridabad" name="category" />
+                        <label for="Faridabad">Faridabad</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Gorakhpur" name="category" />
+                        <label for="Gorakhpur">Gorakhpur</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Gurugram" name="category" />
+                        <label for="Gurugram">Gurugram</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Howrah" name="category" />
+                        <label for="Howrah">Howrah</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Jalandhar" name="category" />
+                        <label for="Jalandhar">Jalandhar</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Kolkata" name="category" />
+                        <label for="Kolkata">Kolkata</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Kurukshetra" name="category" />
+                        <label for="Kurukshetra">Kurukshetra</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Kanpur" name="category" />
+                        <label for="Kanpur">Kanpur</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Lucknow" name="category" />
+                        <label for="Lucknow">Lucknow</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Ludhiana" name="category" />
+                        <label for="Ludhiana">Ludhiana</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Nagpur" name="category" />
+                        <label for="Nagpur">Nagpur</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Nashik" name="category" />
+                        <label for="Nashik">Nashik</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Kolhapur" name="category" />
+                        <label for="Kolhapur">Kolhapur</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Pune" name="category" />
+                        <label for="Pune">Pune</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Patiala" name="category" />
+                        <label for="Patiala">Patiala</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Prayagraj" name="category" />
+                        <label for="Prayagraj">Prayagraj</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Sonipat" name="category" />
+                        <label for="Sonipat">Sonipat</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Varanaasi" name="category" />
+                        <label for="Varanaasi">Varanaasi</label>
+                    </div>
+                </div>
+
+                <div class="selected">
+                    Select Your city
+                </div>
+
+                <div class="search-box">
+                    <input type="text" name="search" placeholder="Start Typing..." />
+                </div>
+            </div>
+        </div>
+        <div class="lang">
+            <select>
+                <option>English</option>
+                <option>Hindi</option>
+            </select>
+        </div>
+
+        <div class="right">
+            <!-- <button class="right-btn" id="myButton" href="#">Login</button>
+            <button class="right-btn" href="#">Order</button> -->
+
+            <a class="  right-btn" id="register" href="/register" role="button">Register</a>
+            <a class=" right-btn" href="/login" id="login" role="button">Login</a>
+        </div>
+
+        <div class="main-nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Rabi crops</a>
+                    <ul>
+                        <li><a href="#">Onions</a></li>
+                        <li><a href="#">Potato</a></li>
+                        <li><a href="#">Sarso</a></li>
+                        <li><a href="#">Carrot</a></li>
+                        <li><a href="#">Chana</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Zaid crops</a>
+                    <ul>
+                        <li><a href="">Watermellon</a></li>
+                        <li><a href="">Kharbhuja</a></li>
+                        <li><a href="">Kakdi</a></li>
+                        <li><a href="">Khira</a></li>
+                        <li><a href="">Khaddu</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Kharif crops</a>
+                    <ul>
+                        <li><a href="">Makka</a></li>
+                        <li><a href="">Kapas</a></li>
+                        <li><a href="">mungphali</a></li>
+                        <li><a href="">bajara</a></li>
+                        <li><a href="">Rice</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nagdi crops</a>
+                    <ul>
+                        <li><a href="">sugercane</a></li>
+                        <li><a href="">kapas</a></li>
+                        <li><a href="">tea</a></li>
+                        <li><a href="">coffee</a></li>
+                        <li><a href="">surajmuhki</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Vegetables</a>
+                    <ul>
+                        <li><a href="">Bhindi</a></li>
+                        <li><a href="">phulgobhi</a></li>
+                        <li><a href="">pattagobhi</a></li>
+                        <li><a href="">brinjal</a></li>
+                        <li><a href="">kaddu</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Fruits</a>
+                    <ul>
+                        <li><a href="">Apple</a></li>
+                        <li><a href="">Orange</a></li>
+                        <li><a href="">pineapple</a>
+                        <li><a href="">Graphes</a>
+                        <li><a href="">mango</a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="banner">
+            <img class="homepic" src="/img/new.jpg">
+        </div>
+        <h2 class="ourproduct">OUR PRODUCTS</h2>
+        <div class="container-fluid">
+            <div class="site-slider-two px-md-4">
+                <div class="row slider-two text-center">
+                    <div class="col-md-2 product pt-md-5">
+                        <div class="slider-box">
+                            <img src="/img/rabi.png" class="box" alt="rabi crops">
+                            <h2>Rabi crops</h2>
+                            <p>All rabi crops are available
+                                MSP price also mention
+                                All retailers address mention
+                                You can buy anywhere
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 product pt-md-5">
+                        <div class="slider-box">
+                            <img src="/img/nagdii.png" class="box" alt="rabi crops">
+                            <h2>Nagdi crops</h2>
+                            <p>All nagdi crops are available
+                                MSP price also mention
+                                All retailers address mention
+                                You can buy anywhere
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 product pt-md-5">
+                        <div class="slider-box">
+                            <img src="/img/kharif.png" class="box" alt="rabi crops">
+                            <h2>Kharif Crops</h2>
+                            <p>All kharif crops are available
+                                MSP price also mention
+                                All retailers address mention
+                                You can buy anywhere
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 product pt-md-5">
+                        <div class="slider-box">
+                            <img src="/img/zaid.png" class="box" alt="rabi crops">
+                            <h2>Zaid Crops</h2>
+                            <p>All jayad crops are available
+                                MSP price also mention
+                                All retailers address mention
+                                You can buy anywhere
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 product pt-md-5">
+                        <div class="slider-box">
+                            <img src="img/fruits.png" class="box" alt="rabi crops">
+                            <h2>Fruits</h2>
+                            <p>All Froots are available
+                                MSP price also mention
+                                All retailers address mention
+                                You can buy anywhere
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 product pt-md-5">
+                        <div class="slider-box">
+                            <img src="/img/vegetable.png" class="box" alt="rabi crops">
+                            <h2>Vegetables</h2>
+                            <p>All vagetable are available
+                                MSP price also mention
+                                All retailers address mention
+                                You can buy anywhere
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="slider-btn">
+                    <span class="prev position-top"><i class="fas fa-chevron-left"></i></span>
+                    <span class="next position-top right-0"><i class="fas fa-chevron-right"></i></span>
+                </div> -->
+            </div>
+        </div>
+        <div class="services">
+            <h4 class="ourservices">Our Services</h4>
+            <div class="work">
+                <div class="service">
+                    <h5>Crop Transactions</h5>
+                    <p>We boast in smooth and efficient crop transactions. We are a channel between farmers (sellers)
+                        and corporates (buyers) and facilitate direct transactions between them, eliminating the need of
+                        any middlemen.</p>
+                </div>
+                <div class="service">
+                    <h5>Storage Facilities</h5>
+                    <p>We offer storage facilities at extremely low costs to farmers as well as anybody who requires so.
+                        We have best in class warehouses, cold storages and silos with atmosphere control, pest free
+                        environment and weather protection.</p>
+                </div>
+                <div class="service">
+                    <h5>Logistics</h5>
+                    <p>Logistics can be difficult, time and money consuming especially if one has to do everything
+                        manually and solely. Farmers/corporates who are unable to transport their produce/orders, we
+                        provide them easy and reliable logistics</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="inner-footer">
+                <div class="footer-items">
+                    <h2>Farmers way</h2>
+                    <p>jjcbajb jkcbjsa cmajnka
+                        aknckancla
+                        ckanckancla akcnak.
+                    </p>
+                </div>
+                <div class="footer-items">
+                    <h3>company</h3>
+                    <div class="borer"></div>
+                    <ul>
+                        <a href="">
+                            <li>About us</li>
+                        </a>
+                        <a href="">
+                            <li>service</li>
+                        </a>
+                        <a href="">
+                            <li>term & condition</li>
+                        </a>
+                        <a href="">
+                            <li>Careers</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <h3>Get help</h3>
+                    <div class="borer"></div>
+                    <ul>
+                        <a href="">
+                            <li>team contact</li>
+                        </a>
+                        <a href="">
+                            <li>delivery</li>
+                        </a>
+                        <a href="">
+                            <li>Payment</li>
+                        </a>
+                        <a href="">
+                            <li>order status</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <h3>Address</h3>
+                    <div class="borer"></div>
+                    <ul>
+                        <a href="">
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>1,abc street,ranchi</li>
+                        </a>
+                        <a href="">
+                            <li><i class="fa fa-phone" aria-hidden="true"></i>4568524997485</li>
+                        </a>
+                        <a href="">
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i>abc65do@gmail.com</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <h3>contect/inquery</h3>
+                    <div class="borer"></div>
+                    <div class="email">
+                        <div class="text">Email</div>
+                        <input type="email" required>
+                    </div>
+                    <div class="msg">
+                        <div class="text">Message</div>
+                        <textarea rows="3" cols="25" required></textarea>
+                    </div>
+                    <div class="send-btn">
+                        <button>Send</button>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <hr style="text-align:center">copyright 2020 All rights reserved | this website design by Rubian &
+                    teams</hr>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/javascript/index.js"></script>
+    <script src="/javascript/home.js"></script>
+
+
+    </script>
+</body>
+
+</html>

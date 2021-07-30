@@ -1,0 +1,13 @@
+header{
+    content: "";
+    background-color: #000033;
+    position: absolute;
+    height: 18%;
+    width: 100%;
+}
+.logo h1 {
+    color: wheat;
+    top: 18px;
+    left: 27px;
+    position: absolute;
+}
