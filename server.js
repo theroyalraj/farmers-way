@@ -192,10 +192,13 @@ app.post("/post", function(req, res) {
 });
 
 app.post("/login", function(req, res) {
-
-    console.log(req);
+    // const name = User.findOne({ email: req.body.email })
+    // console.log("email " + req.body.email)
+    // console.log("name-->" + name)
+    // console.log(req);
     const user = new User({
         username: req.body.email,
+        name: req.body.name,
         password: req.body.password
     })
 
